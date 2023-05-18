@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <table id="taskTable">
+    <tr>
+      <th>Allocated Time</th>
+      <th>Total Task Rated</th>
+      <th>Hours Done</th>
+    </tr>
+    <tr>
+      <td><input type="number" class="timeAllocated"></td>
+      <td><input type="number" class="taskRating"></td>
+      <td><input type="text" class="hoursDone" readonly></td>
+    </tr>
+  </table>
+  <div class="button-container">
+    <button onclick="addTaskRow()">Add Task</button>
+    <button onclick="calculateWorkHours()">Calculate Hours</button>
+    <button onclick="calculateTotalHours()">Calculate Total Hours</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
